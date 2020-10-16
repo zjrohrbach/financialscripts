@@ -1,0 +1,24 @@
+# hledger csv conversion rules for lcb
+
+account1 liabilities:capone
+
+skip 1
+
+#	
+# 	Transaction Date, 	Posted Date, 	Card No., 	Description, 	Category, 	Debit, 		Credit
+# 	1			2		3		4		5		6		7
+fields	date,			,		,		description,	,		amount-out,	amount-in
+
+#date-format %-m/%-d/%Y
+date-format %Y-%-m-%-d
+
+if RC ARCHDIOCESE OF IN
+ account2 expenses:charitable:tithe:archindy
+ comment RECEIPT: see-archindy-report
+ description RC ARCHDIOCESE OF IN
+
+if WFYI
+ account2 expenses:charitable:other:wfyi
+ comment RECEIPT: see-wfyi-report
+
+include common.rules
