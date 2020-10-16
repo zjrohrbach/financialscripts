@@ -32,17 +32,17 @@ There are two lines in this file that need to be configured.
     to include the closing '/'.*  It is assumed that this path will lead to a directory structure broken down by month
     as shown below
 
-      data/ (this directory is set in config.sh as $path_to_finanaces)
-        |
-        +---01 (for January data)
-        |
-        +---02 (for February data)
-        |
-        .
-        .
-        .
-        |
-        +---12 (for December data)
+          data/ (this directory is set in config.sh as $path_to_finanaces)
+            |
+            +---01 (for January data)
+            |
+            +---02 (for February data)
+            |
+            .
+            .
+            .
+            |
+            +---12 (for December data)
 
 # The `visualizing/` directory
 
