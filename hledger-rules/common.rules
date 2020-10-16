@@ -1,66 +1,11 @@
 currency $
 
+#you can put any recurring transaction rules here.  These are a few examples
+
 if KOHLS
  description KOHLS
  account2 expenses:clothes
 
-if MOES SW GRILL
- description MOES SW GRILL
- account2 expenses:food:restaraunt
-
-if AMAZON.COM
- description AMAZON
-
-if JIMMY JOHNS
- description JIMMY JOHNS
- account2 expenses:food:restaraunt
-
-if PARKINDY
- description PARKINDY LLC
- account2 expenses:auto:parking
-
-if CATHOLIC RELIEF
- description CATHOLIC RELIEF SERVICES
- account2 expenses:charitable:tithe:crs
- comment RECEIPT: [tba]
-
-if SOCIETY OF SAINT
- description SOCIETY OF SAINT VINCENT DE PAUL
- account2 expenses:charitable:tithe:svdp
- comment RECEIPT: [tba]
-
-if SPEEDWAY
- account2 expenses:auto:gas
- description SPEEDWAY
-
-if STARBUCKS
- account2 expenses:food:restaraunt
- description STARBUCKS
-
-if FAITH DIRECT 
- account2 expenses:charitable:tithe:stl
- comment RECEIPT: see-StL-report
- description ST LAWRENCE
-
-if ST LAWRENCE
- account2 expenses:charitable:tithe:stl
- comment RECEIPT: see-StL-report
- description ST LAWRENCE
-
-if BUTLER UNIVERSITY
- account2 expenses:charitable:tithe:bucop
- comment RECEIPT: [tba]
- description BUTLER UNIVERSITY
-
 if CITIZENSENERGYGROUP
  account2 expenses:utility:water
  description CITIZENS ENERGY GROUP
-
-if HUMANADVENTURE
- account2 expenses:charitable:tithe:commonfund
- comment RECEIPT: see-HAC-report
- description HUMAN ADVENTURE CORP
-
-if IPL UTILITYPMT
- account2 expenses:utility:electricity
- description IPL UTILITY PAYMENT

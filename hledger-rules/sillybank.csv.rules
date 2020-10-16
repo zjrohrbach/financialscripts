@@ -1,6 +1,6 @@
-# hledger csv conversion rules for lcb
+# hledger csv conversion rules for a sample bank
 
-account1 liabilities:capone
+account1 liabilities:bank-1
 
 skip 1
 
@@ -12,13 +12,5 @@ fields	date,			,		,		description,	,		amount-out,	amount-in
 #date-format %-m/%-d/%Y
 date-format %Y-%-m-%-d
 
-if RC ARCHDIOCESE OF IN
- account2 expenses:charitable:tithe:archindy
- comment RECEIPT: see-archindy-report
- description RC ARCHDIOCESE OF IN
-
-if WFYI
- account2 expenses:charitable:other:wfyi
- comment RECEIPT: see-wfyi-report
 
 include common.rules
